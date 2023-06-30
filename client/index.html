@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coding Buddy</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div id="app">
+      
+      <div id="top">
+        <button class="github_link" onclick="window.open('https://github.com/shimupan', '_blank')"><img src="icons/github-mark.svg"/></button>
+        <p>Check Out my Github!</p>
+        <p>Project by Shimu Pan</p>
+      </div>
+
+      <div id="welcome">
+        <h1>Hello!</h1>
+        <h1>This is a project that mimicks Chat-GPT's</h1>
+        <h1>website and style throught the use of</h1>
+        <h1>openAI's api, Javascript, HTML, and CSS.</h1>
+        <h1>Check out my github page for more projects!</h1>
+        <button class="start" onclick="hide_welcome()">Continue to Chat</button>
+      </div>
+
+      <div id="container"></div>
+      <form>  
+        <textarea name="prompt" rows="1" cols="1" placeholder="Ask Away!"></textarea>
+        <button id="enter" type="submit"><img src="icons/sent-icon.svg"/></button>
+      </form>
+    </div>
+    <script type="module" src="main.js"></script>
+    
+    <script>
+      // hides the welcome screen
+      function hide_welcome() {
+        let welcome = document.getElementById('welcome');
+        welcome.style.display = 'none';
+      }
+    </script>
+  </body>
+</html>
