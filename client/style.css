@@ -153,6 +153,10 @@ body {
   display: none;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 form {
   width: 100%;
   max-width: 1280px;
