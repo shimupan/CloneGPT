@@ -45,10 +45,14 @@ body {
   justify-content: center;
 }
 
-#welcome button {
+#welcome #text{
+  padding: 20px;
+}
+
+#welcome .start {
   width: 100%;
   height: 10%;
-  
+
   color: blue;
   outline: none;
   border: 4px solid cyan;

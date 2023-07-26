@@ -70,7 +70,7 @@ const handle_submission = async (e) => {
     }, 300) 
 
     // recieve response from api
-    const GPT_response = await fetch('http://localhost:5000',{
+    const GPT_response = await fetch('https://gpt-30fg.onrender.com',{
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
